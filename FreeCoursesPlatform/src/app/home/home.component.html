@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/src/app/app.component.scss" />
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+    <button type="button" class="top-bar-button" routerLink="/logIn">Log in</button>
+      <button type="button" class="top-bar-button">Register</button>
+    </div>
+
+    <!-- Modified Top-UI Section -->
+    <div class="Top-UI">
+      <h1 class="welcome-heading">Welcome to CourseConnect!</h1>
+      <!-- New Welcome Heading -->
+      <div class="search-container">
+        <div class="search-box">
+          <img
+            src="/assets/Search Icon.png"
+            alt="Search Icon"
+            style="height: 35px"
+          />
+          <!-- Icon -->
+          <input
+            type="search"
+            placeholder="Search for courses, subjects etc."
+          />
+          <!-- Search Bar -->
+        </div>
+      </div>
+    </div>
+    <!-- Centered Container -->
+    <div class="centered-container">
+      <div class="buttons-container">
+        <span class="explore-label">Explore:</span>
+        <!-- Explore label -->
+        <button type="button">Faculty</button>
+        <button type="button">Subject</button>
+        <button type="button">Difficulty</button>
+        <button type="button">Teacher</button>
+      </div>
+    </div>
+  </body>
+</html>
