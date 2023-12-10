@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LoginService } from '../services/login.service';
 
 @Component({
   selector: 'app-log-in',
@@ -8,6 +9,11 @@ import { Component } from '@angular/core';
 export class LogInComponent {
 
  
-  constructor() {
+  constructor(private loginService: LoginService) {}
+
+  login(): void {
+    const username = (document.getElementById('username') as HTMLInputElement).value;
+    const password = (document.getElementById('password') as HTMLInputElement).value;
+    this.loginService.login(username, password);
   }
 }

@@ -1,0 +1,54 @@
+body {
+    background-color: whitesmoke; /* Window background set to grey */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column; /* Align items vertically */
+}
+
+.login-form {
+    background-color: black; /* Login form background set to black */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: white; /* Text color set to white */
+    margin-top: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+input[type="text"], input[type="password"] {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: white; /* Input field background set to white */
+    color: black; /* Input field text color */
+}
+
+.login-button {
+    padding: 7px 15px;
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+    color: black;
+    cursor: pointer;
+    margin-left: 90px;
+}
+
+.login-button:hover {
+    background-color: grey;
+}
+
+.logo {
+    margin-top: 20px;
+    align-self: center;
+}
