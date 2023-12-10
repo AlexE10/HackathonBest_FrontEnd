@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Course } from '../course';
+import { CourseService } from '../services/course.service';
 
 @Component({
   selector: 'app-course',
@@ -7,4 +9,18 @@ import { Component } from '@angular/core';
 })
 export class CourseComponent {
 
+  displayCourse: boolean = true;
+  showCourse: boolean = true;
+
+  @Input() course: Course = 
+    {
+      title : '',
+      description : '',
+      creator : '',
+      categoryId : '',
+      duration : '',
+      difficulty : ''
+    }
+
+    constructor(private courseService: CourseService) {}
 }

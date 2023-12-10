@@ -1,0 +1,53 @@
+body {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column; /* Align items vertically */
+    text-align: center; /* Center the content horizontally */
+}
+
+.register-form {
+    background-color: black;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    margin-top: 20px; /* Add some space between the logo and the form */
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+label {
+    display: inline-block;
+    margin-right: 10px;
+    color: white;
+}
+
+input[type="text"], input[type="password"], input[type="email"], select {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: white;
+    color: black;
+    flex-grow: 1;
+}
+
+.register-button {
+    padding: 7px 15px;
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+    color: black;
+    cursor: pointer;
+    width: 100%;
+}
+
+.register-button:hover {
+    background-color: grey;
+}

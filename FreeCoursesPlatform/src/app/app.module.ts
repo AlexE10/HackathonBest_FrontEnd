@@ -9,6 +9,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { RegisterComponent } from './register/register.component';
 import { CourseComponent } from './course/course.component';
 import { AddCourseComponent } from './add-course/add-course.component';
+import { AuthorPipePipe } from './author-pipe.pipe';
+import { MatCardModule } from "@angular/material/card";
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,12 +20,15 @@ import { AddCourseComponent } from './add-course/add-course.component';
     HomeComponent,
     RegisterComponent,
     CourseComponent,
-    AddCourseComponent
+    AddCourseComponent,
+    AuthorPipePipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    MatCardModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { CourseService } from '../services/course.service';
+import { Course } from '../course';
+
 
 @Component({
   selector: 'app-home',
@@ -6,5 +9,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
+  
+  filteredCourses: Course[] = [];
 
+  constructor(private courseService: CourseService) {
+  
+  }
+
+  ngOnInit(): void {
+    this.courseService.serviceCall();
+    this.courseService.getAnnouncements().subscribe(x=>this.filteredCourses=x);
+  }
 }

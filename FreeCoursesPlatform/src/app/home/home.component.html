@@ -13,7 +13,6 @@
     <button type="button" class="top-bar-button" routerLink="/logIn">Log in</button>
       <button type="button" class="top-bar-button" routerLink="/register">Register</button>
     </div>
-
     <!-- Modified Top-UI Section -->
     <div class="Top-UI">
       <h1 class="welcome-heading">Welcome to CourseConnect!</h1>
@@ -33,17 +32,28 @@
           <!-- Search Bar -->
         </div>
       </div>
+      <div class ="image">
+        <img src="/assets/LOGO.png" alt="Photo uploaded but not loaded" style="height: 220px" style="width: 220px;">
+      </div>
     </div>
     <!-- Centered Container -->
     <div class="centered-container">
       <div class="buttons-container">
         <span class="explore-label">Explore:</span>
         <!-- Explore label -->
-        <button type="button">Faculty</button>
-        <button type="button">Subject</button>
-        <button type="button">Difficulty</button>
-        <button type="button">Teacher</button>
+        <button class="button" type="button">Duration</button>
+        <button class="button" type="button">Category</button>
+        <button class="button" type="button">Difficulty</button>
+        <button class="button" type="button">Teacher</button>
       </div>
     </div>
+    <div class="course-grid">
+    <div *ngFor="let course of filteredCourses">
+      <!-- <img class="container2" src="https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg" alt="salut"/> -->
+      <app-course class="course" [course]="course">
+      </app-course>
+    </div>
+    </div>
+    
   </body>
 </html>

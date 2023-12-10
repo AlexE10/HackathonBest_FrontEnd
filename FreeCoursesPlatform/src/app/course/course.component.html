@@ -1,1 +1,18 @@
-<p>course works!</p>
+<mat-card class="example-card" *ngIf="showCourse">
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{course.title}}</mat-card-title>
+        <mat-card-subtitle>{{course.creator | authorPipe}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="/assets/LOGO.png" alt="Photo uploaded but not loaded" style="height: 250px" style="width: 250px;">
+    <mat-card-content>
+        <div class="course-details">
+            <p class="mesajContent">Description:</p>
+            <p class="mesajContent">{{course.description}}</p>
+        </div>
+        <div class="course-footer">
+            <p class="mesajText">Durata: {{course.duration}}</p>
+            <p class="mesajText">Dificultate: {{course.difficulty}}</p>
+        </div>
+    </mat-card-content>
+</mat-card>

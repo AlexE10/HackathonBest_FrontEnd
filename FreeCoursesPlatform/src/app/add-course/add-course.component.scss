@@ -1,0 +1,38 @@
+body {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column; /* Align items vertically */
+}
+.course-form {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    width: 300px;
+    margin: auto;
+    box-shadow: 0px 0px 10px grey;
+    display: flex;
+    flex-direction: column; /* Aligns children vertically */
+    align-items: center; /* Centers children horizontally */
+}
+.form-group {
+    margin-bottom: 10px;
+}
+.form-group label {
+    margin-right: 10px;
+}
+.form-group input[type="text"] {
+    padding: 5px;
+}
+.form-group select {
+    padding: 5px;
+}
+.course-form.h {
+    color: black; /* Example: Black color for the text */
+    margin-bottom: 20px; /* Spacing between the heading and the form */
+    /* Additional styling as needed */
+    font-family: Arial, Helvetica, sans-serif;
+}
